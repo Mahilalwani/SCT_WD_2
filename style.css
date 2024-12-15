@@ -1,0 +1,69 @@
+body{
+    font-family: Arial, sans-serif;
+background-color: #f0f0f0;
+background-image:url(OIP.jpg) ;
+}
+.stopwatch-container{
+    width: 400px;
+    margin: 40px auto;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.stopwatch-header{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.stopwatch-display{
+    font-size: 48px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.stopwatch-controls{
+    text-align: center;
+    margin-bottom: 20px;
+}
+button{
+    width: 100px;
+    height: 30px;
+    font-size: 16px;
+    border: none;
+border-radius: 5px;
+background-color: #700000;
+color: #fff;
+cursor: pointer;
+}
+button:hover{
+    background-color: #ff9900;
+}
+button:disabled{
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+.lap-times-container{
+    margin-top: 20px;
+}
+.lap-times-container h2{
+    margin-top: 0;
+}
+#lap-times-list{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+#lap-times-list li{
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+#lap-times-list li:last-child{
+    border-bottom: none;
+}
+#lap-times-list li::before{
+    content: "Lap";
+}
+#lap-times-list li span{
+    font-weight: bold;
+    color: #ff3737;
+}
